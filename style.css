@@ -1,0 +1,60 @@
+:root {
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+.card {
+    background-color: var(--Moderate-violet);
+    margin-block: 30px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "Daniel Daniel Jonathan Kira"
+    "Jeanette Patrick Patrick Kira";
+    gap: 10px;
+    width: 95%;
+}
+
+.Daniel {
+    grid-area: Daniel;
+}
+
+.Jonathan {
+    grid-area: Jonathan;
+}
+
+.Kira {
+    grid-area: Kira;
+}
+
+.Jeanette {
+    grid-area: Jeanette;
+}
+
+.Patrick {
+    grid-area: Patrick;
+}
+
+.barlow-500 {
+    font-family: "Barlow Semi Condensed", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+.barlow-600 {
+    font-family: "Barlow Semi Condensed", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
